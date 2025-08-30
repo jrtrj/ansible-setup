@@ -1,0 +1,28 @@
+- name: install utilities
+  apt:
+    name:
+      - neovim
+      - figlet
+      - flameshot
+      - feh
+      - htop
+      - psmisc
+      - fastfetch
+      - mpv
+      - htop
+      - tree
+      - thunar
+      - mupdf
+      - iwd
+      - pipewire-audio-client-libraries
+      - pavucontrol
+      - libspa-0.2-bluetooth
+      - rfkill
+      - adb
+      - systemd-resolved
+      - pipewire
+      - pipewire-pulse
+      - xserver-xorg-input-libinput
+      - gh
+      - 7zip
+    state: present

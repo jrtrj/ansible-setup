@@ -6,7 +6,9 @@
       apt:
         update_cache: true
       tags: [node, java, zsh]
+
   tasks:
-    - include: tasks/zsh.yml
-    - include: tasks/java.yml
-    - include: tasks/node.yml
+    - name: java
+      ansible.builtin.include_tasks: tasks/java.yml
+    - name: utilities
+      ansible.builtin.include_tasks: tasks/utils.yml
